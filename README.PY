@@ -1,10 +1,10 @@
 import random
 
 class War:
-    def __init__(self, name):  # Тепер тільки ім'я, а hepe і sula  
+    def __init__(self, name):   
         self.name = name
-        self.hepe = random.randint(60, 100)  # Здоров'я від 60 до 100
-        self.sula = random.randint(10, 30)   # Сила від 10 до 30
+        self.hepe = random.randint(60, 100)   
+        self.sula = random.randint(10, 30)   
 
     def is_alive(self):
         return self.hepe > 0
