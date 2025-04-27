@@ -1,7 +1,7 @@
 import random
 
 class War:
-    def __init__(self, name):  # Тепер тільки ім'я, а hepe і sula — випадкові
+    def __init__(self, name):  # Тепер тільки ім'я, а hepe і sula  
         self.name = name
         self.hepe = random.randint(60, 100)  # Здоров'я від 60 до 100
         self.sula = random.randint(10, 30)   # Сила від 10 до 30
@@ -17,11 +17,11 @@ class War:
             if not other.is_alive():
                 print(f"{other.name} загинув!")
 
-# Створення воїнів
+ 
 w_1 = War('Predator')
 w_2 = War('Alien')
 
-# Показати початкові параметри
+ 
 print(f"{w_1.name} — HP: {w_1.hepe}, Сила: {w_1.sula}")
 print(f"{w_2.name} — HP: {w_2.hepe}, Сила: {w_2.sula}")
 
